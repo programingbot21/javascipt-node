@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexical scoping</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function outer(){
+        let userName = "Kunal";
+        let userName1 ="Sai Varsith";
+        function inner(){
+            console.log("Inner Fun",userName);
+        }
+function innerTwo(){
+    console.log("InnerTwo",userName);
+}
+function innerThree(){
+    console.log("Inner Three",userName1);
+}
+        innerThree()
+        innerTwo()
+         inner()
+    }
+    outer()
+
+</script>
+</html>
