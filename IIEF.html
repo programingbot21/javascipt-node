@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function chai(){
+            document.writeln('Immediately Invoked Funtion Expression IIFE')
+        }
+        chai();
+
+
+        //iife
+
+       ( function chai()
+        {
+            document.writeln('<br>','Immediately Invoked Funtion Expression IIFE');   
+        })();
+
+        ( (name) => {
+            document.writeln("<br>",`DB Name  ${name}`);
+        })('ramesh');
+    </script>
+</body>
+</html>
