@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const band = {
+            bandName : "led zepplin",
+            famousSong: "stairway to heaven",
+            year: 1968,
+            anotherfamousSong : "kashmir",
+        };
+
+        let{bandName, famousSong, ...restProps} = band;
+        console.log(bandName,famousSong);
+        console.log(restProps);
+        //console.log(band);
+    </script>
+</body>
+</html>

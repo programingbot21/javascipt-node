@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // let and const are block scope
+        //var is function scope
+        {
+            const firstName = "Harsh";
+            console.log(firstName);
+        }
+        //console.log(firstName );outside is not run
+        {
+            const firstName = "mohit";
+            console.log(firstName);
+        }
+        {
+            var firstName = "Harsh";
+            //console.log(firstName);
+        }
+        //var is run outside // treat as a function
+        console.log(firstName);
+
+
+    </script>
+</body>
+</html>
