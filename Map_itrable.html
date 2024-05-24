@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person = new Map();
+        person.set('firstName', 'harshit');
+        person.set('age',7);
+        person.set(1,'one');
+        console.log(person.get(1))
+        console.log(person);
+        // for(let key of person.keys()){
+        // console.log(key);
+        // }
+
+        for(let [key ,value] of person){
+            console.log(key,value)
+        }
+    </script>
+</body>
+</html>
