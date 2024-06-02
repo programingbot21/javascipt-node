@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function about(hobby, favMusician){
+            console.log(this.firstName, this.age , hobby, favMusician)
+        }
+
+        const user1 ={
+            firstName: "harsh",
+            age: 8,
+        }
+
+        const user2 = {
+            firstName: "kini",
+            age: 24,
+        }
+        about.call(user1, "guiter", "mazrt");
+        about.apply(user2, ["song", "Aani"]);
+        const funs = about.bind(user2, "guitar","bach");
+        funs();
+    </script>
+</body>
+</html>

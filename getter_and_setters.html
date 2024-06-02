@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Person{
+            constructor(firstName, lastName, age){
+                this.firstName = firstName;
+                this.lastName = lastName;
+                this.age = age;
+            }
+
+            get fullName(){
+                return `${this.firstName} ${this.lastName} Age ${this.age}`
+            }
+
+            set fullName(fullName){
+                const [firstName, lastName] = fullName.split(" ");
+                this.firstName = firstName;
+                this.lastName = lastName; 
+            }
+        }
+            const Person1 = new Person("harshit" , "sharma", 5);
+           //get it is a property call without () 
+           console.log(Person1.fullName);
+           console.log(Person1.firstName)
+           console.log(Person1.lastName);
+           Person1.fullName = "mohit Vashistha"
+           console.log(Person1);
+
+           
+           class person{
+            constructor(firstName, lastName, age){
+                this.firstName = firstName;
+                this.lastName = lastName;
+                this.age = age;
+            }
+            //FullJName is a function
+              fullName(){
+                return `${this.firstName} ${this.lastName} Age ${this.age}`
+            }
+        }
+            const Person2 = new person("harshit" , "sharma", 5);
+           console.log(Person2.fullName());
+
+
+
+        
+    </script>
+</body>
+</html>

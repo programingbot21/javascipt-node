@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class Animal {
+            constructor(name, age){
+                this.name = name,
+                this.age = age;
+            }
+            eat(){
+                return `${this.name} is eating`;
+            }
+            run(){
+                return `${this.name} is runing at ${this.speed} Kmph`;
+            }
+
+            isSuperCute(){
+                return this.age <= 1;
+            }
+
+            isCute(){
+                return true;
+            }
+        }
+        class Dog extends Animal{
+            constructor(name, age, speed){
+                super(name,age);
+                this.speed = speed;
+            }
+
+        }
+
+        const tomy = new Dog("tommy",9,45)
+        console.log(tomy)
+        console.log(tomy.isCute());
+        console.log(tomy.eat());
+        console.log(tomy.isSuperCute());
+        console.log(tomy.run());
+    </script>
+</body>
+</html>
